@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+    <title>The Deals Place</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+                           input[type=text]:enabled {
+                        background: #ffff00;
+                                   }
+  </style>
+  <link rel="stylesheet" href="http://modkenya.com/files/animate.css">
+
+<body>
+</head>
+         <section class="row" id="top">
+       <div class="col-md-12">
+
+             <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+                 <!-- Brand -->
+                 <a class="navbar-brand" href="#">
+                     <img src="../static/myiconn.png" alt=""class="img-fluid" width="35"><b>TheDealsplace</b>
+                 </a>
+                 <!-- Toggler/collapsibe Button -->
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                 <span class="navbar-toggler-icon"></span>
+                 </button>
+
+                 <!-- Navbar links -->
+                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                     <ul class="navbar-nav ml-auto">
+                       <li class="nav-item">
+                         <a class="nav-link" href="#SERVICES"></a>
+                       </li>
+                         <li class="nav-item">
+                         <a class="nav-link" href="#TICKERS"></a>
+                       </li>
+                         <li class="nav-item">
+                         <a class="nav-link" href="#HOTELS"></a>
+                       </li>
+                         <li class="nav-item">
+                         <a class="nav-link" href="#OURTEAM"></a>
+                       </li>
+                         </li>
+                         <li class="nav-item">
+                         <a class="nav-link" href="#HOME"></a>
+                       </li>
+                         </li>
+                         <li class="nav-item">
+                         <a class="nav-link" href="#FEATURES"></a>
+                       </li>
+                       <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Sign in
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">signin</a>
+                            <a class="dropdown-item" href="#">register</a>
+                          </div>
+                        </li>
+                     </ul>
+                 </div>
+               </nav>
+        </div>
+   </section>
+         <section class="row">
+           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.6s" id="HOME">
+           <div id="demo" class="carousel slide" data-ride="carousel">
+             <!-- Indicators -->
+               <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                   <li data-target="#demo" data-slide-to="2"></li>
+               </ul>
+             <!-- The slideshow -->
+                  <div class="carousel-inner">
+                  <div class="carousel-item active">
+                  <img src="../static/hirree.jpeg" alt="" class="img-fluid" width="">
+                       <div class="carousel-caption">
+
+               <h2><b>Why Choose Fair Deal Car Rentals</b></h2>
+                     <li class="fa fa-check" >Great value for money with No hidden Extras</li>
+                      <li class="fa fa-check">Reliable & Trustworthy</li>
+                      <li class="fa fa-check">Competitive low Price</li>
+                      <li class="fa fa-check">We strive for your satisfaction</li>
+                      <li class="fa fa-check">Experiences COMFORT & Class</li>
+                      <h3 class="fa fa-check">(Book now & pay on arrivals! No credit,No deposit required)</h3>
+                      <h2><b>DON`T DREAM IT,Dirve it!</b></h2>
+
+              </div>
+            </div>
+
+          </div>
+
+
+          </div>
+               </div>
+
+
+              </form>
+              </form>
+
+         </div>
+
+       </section>
+  <h1><b>Dealsplace</b></h1>
+ <!--Type, Model,Make,pickpoint,Droppoint,Transmission,Miles,Fuel,Cost,Show-->
+
+    <form action="/Dealsplace" method="post">
+
+         Type:<br>
+        <input type="text" name="Type" value="">
+        <br>
+
+        Model:<br>
+        <input type="text" name="Model" value="">
+        <br>
+
+        Make:<br>
+        <input type="text" name="Make" value="">
+        <br>
+
+        Pickpoint:<br>
+        <input type="text" name="Pickpoint" value="">
+        <br>
+
+        Droppoint:<br>
+        <input type="text" name="Droppoint" value="">
+        <br>
+
+        Transmission:<br>
+        <input type="text" name="Transmission" value="">
+        <br>
+        Fuel:<br>
+        <input type="text" name="Fuel" value="">
+        <br>
+        Cost:<br>
+        <input type="number" name="Cost" value="">
+        <br>
+        Color:<br>
+        <input type="text" name="Color" value="">
+        <br>
+         Miles:<br>
+        <input type="number" name="Miles" value="">
+        <br><br>
+        <input type="submit" value="Submit" class="btn btn-info">
+        <input type="reset" class="btn btn-info"><br><br>
+
+    </form>
+        <a href="/login">Already have an Account? Login</a>
+{{msg}}
+
+    </form>
+</body>
+</html>

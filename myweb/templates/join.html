@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <title> Searchdeals</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+         <section class="row" id="top">
+       <div class="col-md-12">
+
+             <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+                 <!-- Brand -->
+                 <a class="navbar-brand" href="#">
+                     <img src="../static/myiconn.png" alt=""class="img-fluid" width="35"><b>TheDealsplace</b>
+                 </a>
+                 <!-- Toggler/collapsibe Button -->
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                 <span class="navbar-toggler-icon"></span>
+                 </button>
+
+                 <!-- Navbar links -->
+                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                     <ul class="navbar-nav ml-auto">
+                         <li class="nav-item">
+                         <a class="nav-link" href="/">Home</a>
+                       </li>
+                       <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Sign in
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">signin</a>
+                            <a class="dropdown-item" href="#">register</a>
+                          </div>
+                        </li>
+                     </ul>
+                 </div>
+               </nav>
+        </div>
+   </section>
+    <h1>Join Us</h1>
+ <!-- email, surname, password, residence, career, phone-->
+    <form action="/join" method="post">
+ <!-- email, surname, password, residence, Dl, phone-->
+    <form action="/join" method="post">
+        Email:<br>
+        <input type="text" name="email" value="">
+        <br>
+
+        surname:<br>
+        <input type="text" name="surname" value="">
+        <br>
+
+        password:<br>
+        <input type="text" name="password" value="">
+        <br>
+
+        residence:<br>
+        <input type="text" name="residence" value="">
+        <br>
+
+        Dl:<br>
+        <input type="text" name="career" value="">
+        <br>
+
+        phone:<br>
+        <input type="text" name="phone" value="">
+        <br><br>
+
+        <input type="submit" value="Submit" class="btn btn-info">
+        <input type="reset" class="btn btn-info"><br><br>
+
+    </form>
+        <a href="/login">Already have an Account? Login</a>
+{{msg}}
+
+</body>
+</html>
